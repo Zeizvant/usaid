@@ -3,6 +3,16 @@
   src: url('./fonts/file.woff2');
 }
 
+@font-face {
+  font-family: 'TBC bold';
+  src: url('./fonts/file \(2\).woff2');
+}
+
+@font-face {
+  font-family: 'TBC normal';
+  src: url('./fonts/file \(3\).woff2');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
