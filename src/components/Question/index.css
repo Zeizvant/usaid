@@ -1,0 +1,45 @@
+.question{
+    border-bottom: 1px solid rgb(53,  49,  49);
+}
+.question-text > p{
+    color: #f4f4f4;
+    font-size: 18px;
+    font-family: 'TBC normal';
+}
+.question-text{
+    cursor: pointer;
+    padding: 25px 0;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.open{
+    rotate: 180deg;
+    cursor: pointer;
+}
+.answer-opened{
+    opacity: 1;
+    visibility: visible;
+    height: min-content;
+    color: rgb(244, 244, 244);
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 28px;
+    transition: all 0.3s ease;
+}
+.answer-opened > ul{
+    padding: 40px 0 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.answer-closed{
+    visibility: hidden;
+    height: 0;
+    overflow: none;
+    opacity: 0;
+    color: rgb(244, 244, 244);
+    font-size: 14px;
+    line-height: 28px;
+    transition: all 0.3s ease;
+}
