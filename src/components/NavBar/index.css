@@ -6,6 +6,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0;
+    left: 0;
 }
 .static{
     background-color: #1a1e1f;
