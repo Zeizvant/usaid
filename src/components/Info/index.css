@@ -52,6 +52,10 @@ h1{
     font-size: 20px;
     cursor: pointer;
     font-family: 'TBC normal';
+    transition: color 0.5s ease;
+}
+.main-button:hover{
+    color: rgb(160, 160, 160);
 }
 
 @media screen and (max-width: 1250px) {

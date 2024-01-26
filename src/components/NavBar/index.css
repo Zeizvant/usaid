@@ -26,6 +26,12 @@ nav{
     gap: 50px;
     cursor: pointer;
 }
+.nav-links > li{
+    transition: color 0.5s ease;
+}
+.nav-links > li:hover{
+    color: #00a3e0;
+}
 
 .active{
     color: #00a3e0;
