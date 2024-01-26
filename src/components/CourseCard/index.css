@@ -1,0 +1,45 @@
+.course-card{
+    width: 300px;
+    height: 416px;
+    border: solid 1px rgb(219,219,219);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-details{
+    display: flex;
+    padding-left: 23px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.course-details > p{
+    color: #00AEEF;
+    font-family: 'TBC normal';
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+.course-details > p:hover{
+    color: rgb(0, 117, 167);
+}
+
+.course-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #f4f4f4;
+    font-size: 14px;
+}
+.course-name{
+    font-size: 18px;
+    line-height: 28px;
+}
+.course-info > p{
+    margin: 0 23px;
+}
+
+.course-info > img {
+    width: 100%;
+    object-fit: cover;
+}

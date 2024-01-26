@@ -1,0 +1,40 @@
+.courses{
+    background-color: #161616;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.courses > div {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+h3{
+    color: #dbdbdb;
+    font-size: 24px;
+}
+
+.courses-container{
+    display: grid;
+    row-gap: 24px;
+    justify-content: space-between;
+    grid-template-columns: 300px 300px 300px;
+}
+
+@media screen and (max-width: 1050px) {
+    .courses-container{
+        grid-template-columns: 300px 300px;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .courses-container{
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+}
