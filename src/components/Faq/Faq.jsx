@@ -16,7 +16,7 @@ export const Faq = () => {
                 </div>
                 <div className='questions'>
                     {questions.map((question) => {
-                        return <Question question={question.text} answer={question.answer} />
+                        return <Question key={question.text} question={question.text} answer={question.answer} />
                     })}
                 </div>
                 <div id='all-questions-button-mobile'>
