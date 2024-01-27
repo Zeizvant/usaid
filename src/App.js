@@ -1,4 +1,3 @@
-import './App.css';
 import { Courses } from './components/Courses/Courses';
 import { Faq } from './components/Faq/Faq';
 import { Info } from './components/Info/Info';
