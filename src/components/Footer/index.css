@@ -1,9 +1,13 @@
 footer{
     width: 100%;
     padding:  50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: rgb(25,28, 29);
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 footer > div {
@@ -12,32 +16,58 @@ footer > div {
     max-width: 1000px;
     width: 100%;
     padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .rules{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 120px;
-    justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .social{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 120px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 }
 .social-mobile{
     display: none;
 }
 .social-logos{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 15px;
 }
 #terms{
     cursor: pointer;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
 #terms:hover{
@@ -49,12 +79,20 @@ footer > div {
     height: 39px;
     font-size: 16px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 6px;
     background-color: #00aef3;
     color: #fff;
+    -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+    -o-transition: background-color 0.4s ease, color 0.4s ease;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 .secondary-button:hover{
@@ -64,10 +102,17 @@ footer > div {
 
 @media screen and (max-width: 500px) {
     .social-mobile{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .social{
         display: none;

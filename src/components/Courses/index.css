@@ -1,15 +1,24 @@
 .courses{
     background-color: #161616;
     padding: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .courses > div {
     max-width: 1000px;
     width: 100%;
     padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 68px;
 }
 
@@ -21,23 +30,33 @@ h3{
     height: 416px;
 }
 .courses-container{
+    display: -ms-grid;
     display: grid;
     row-gap: 24px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-grid-columns: 300px 300px 300px;
     grid-template-columns: 300px 300px 300px;
 }
 
 @media screen and (max-width: 1050px) {
     .courses-container{
+        -ms-grid-columns: 300px 300px;
         grid-template-columns: 300px 300px;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 }
 
 @media screen and (max-width: 700px) {
     .courses-container{
+        -ms-grid-columns: minmax(300px,350px);
         grid-template-columns: minmax(300px,350px);
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .course-card{
         gap:20px;

@@ -10,8 +10,12 @@
     cursor: pointer;
     padding: 25px 0;
     gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .open{
     rotate: 180deg;
@@ -20,17 +24,26 @@
 .answer-opened{
     opacity: 1;
     visibility: visible;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     color: rgb(244, 244, 244);
     font-size: 14px;
     margin-bottom: 25px;
     line-height: 28px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .answer-opened > ul{
     padding: 40px 0 40px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 10px;
 }
 .answer-closed{
@@ -41,5 +54,7 @@
     color: rgb(244, 244, 244);
     font-size: 14px;
     line-height: 28px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
