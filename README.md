@@ -59,7 +59,7 @@
 2. Navigate to the project directory:
 
     ```bash
-    cd project
+    cd usaid
     ```
 
 3. Install dependencies:
